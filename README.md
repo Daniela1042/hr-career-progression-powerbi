@@ -1,6 +1,6 @@
 # Dashboard de Progressões de Carreira em RH (Power BI)
 
-Projeto de grupo desenvolvido na unidade curricular **Desenho e Desenvolvimento de Aplicações de Business Intelligence**, no Mestrado em Sistemas Integrados em Business Intelligence (ISCTE – Instituto Universitário de Lisboa), 2026.
+Projeto desenvolvido na unidade curricular **Desenho e Desenvolvimento de Aplicações de Business Intelligence**, no Mestrado em Sistemas Integrados em Business Intelligence (ISCTE – Instituto Universitário de Lisboa), 2026.
 
 O projeto cobre o ciclo completo de uma solução de BI: um **modelo dimensional em estrela** sobre dados de recursos humanos e um **dashboard interativo em Power BI** para analisar as progressões de carreira dos colaboradores.
 
