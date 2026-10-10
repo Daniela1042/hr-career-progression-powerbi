@@ -1,2 +1,98 @@
-# github.com-Daniela1042-hr-career-progression-powerbi
-Dashboard Power BI de progressões de carreira em RH, com modelo dimensional em estrela (2 factos, 8 dimensões) e medidas DAX. Projeto de grupo, Mestrado em BI, ISCTE.
+# Dashboard de Progressões de Carreira em RH (Power BI)
+
+Projeto de grupo desenvolvido na unidade curricular **Desenho e Desenvolvimento de Aplicações de Business Intelligence**, no Mestrado em Sistemas Integrados em Business Intelligence (ISCTE – Instituto Universitário de Lisboa), 2026.
+
+O projeto cobre o ciclo completo de uma solução de BI: um **modelo dimensional em estrela** sobre dados de recursos humanos e um **dashboard interativo em Power BI** para analisar as progressões de carreira dos colaboradores.
+
+## Objetivo
+
+Perceber como evoluem as carreiras numa organização e responder a perguntas como:
+
+- Quantas progressões houve ao longo do tempo e de que tipo foram?
+- Que departamentos e áreas funcionais concentram mais progressões?
+- Qual é o aumento médio e a taxa de variação salarial associados a cada progressão?
+- Como se relacionam as progressões com a avaliação de desempenho, a antiguidade, a idade e o género?
+- Que zonas geográficas concentram mais progressões?
+
+## Modelo de dados
+
+Modelo dimensional em estrela com **2 tabelas de factos** e **8 dimensões**.
+
+| Tipo | Tabela | Descrição |
+|------|--------|-----------|
+| Facto | `Fact_Table_Progressao` | Uma linha por progressão individual |
+| Facto | `Fact_Progressao_Agregada` | Progressões agregadas por departamento e período |
+| Dimensão | `DateDimension` | Calendário (hierarquias de ano civil e fiscal) |
+| Dimensão | `Dim_Colaborador` | Dados do colaborador (inclui género) |
+| Dimensão | `Dim_Departamento` | Departamento e área funcional |
+| Dimensão | `Dim_Tipo_Progressao` | Área e categoria da progressão |
+| Dimensão | `Dim_Perfil_Avaliacao` | Perfil e intervalo de avaliação de desempenho |
+| Dimensão | `Dim_Antiguidade` | Nível de experiência e tempo de antiguidade |
+| Dimensão | `Dim_Idade` | Idade e faixa etária |
+| Dimensão | `Dim_Local_trabalho` | País, distrito, concelho e freguesia |
+
+![Modelo de dados](images/modelo_estrela.png)
+
+## Dashboard
+
+O relatório tem **2 páginas** e **8 KPIs**, com medidas escritas em DAX.
+
+### Progressões Individuais
+
+- **KPIs:** total de progressões, aumento médio, taxa de variação salarial e distrito com mais progressões
+- Evolução de progressões por ano
+- Distribuição por tipo de progressão
+- Distribuição por nível de avaliação
+- Total de progressões por localização
+- Progressões por nível de experiência e género
+- Taxa de variação salarial por faixa etária e género
+- Filtros por categoria de progressão, género, departamento, desempenho, ano, faixa etária e concelho
+
+![Progressões Individuais](images/pagina_progressoes_individuais.png)
+
+### Visão Agregada
+
+- **KPIs:** total de progressões agregadas, departamento com mais progressões, média da taxa de variação e média do novo salário
+- Total de progressões por área funcional
+- Média de variação por área funcional
+- Média do novo salário por ano fiscal
+- Filtros por ano, categoria de progressão, departamento e área funcional
+
+![Visão Agregada](images/pagina_visao_agregada.png)
+
+## Ferramentas
+
+- Power BI Desktop (modelação, medidas DAX e visualização)
+- Modelação dimensional (esquema em estrela)
+
+## Como abrir
+
+1. Fazer download do ficheiro `.pbix` deste repositório.
+2. Abrir com o [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
+3. Se não tiveres o Power BI instalado, podes ver o dashboard exportado em `docs/dashboard.pdf`.
+
+## Estrutura do repositório
+
+```
+├── README.md
+├── hr-career-progression.pbix
+├── images/
+│   ├── modelo_estrela.png
+│   ├── pagina_progressoes_individuais.png
+│   └── pagina_visao_agregada.png
+└── docs/
+    ├── dashboard.pdf
+    ├── medidas_dax.md
+    └── ficha_tecnica.pdf
+```
+
+## Equipa
+
+Trabalho de grupo realizado por:
+
+- Daniela Saad
+- [restantes elementos do grupo]
+
+## Nota sobre os dados
+
+Os dados usados neste projeto são [fictícios / fornecidos no âmbito da unidade curricular] e não correspondem a pessoas ou organizações reais.
