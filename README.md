@@ -60,27 +60,12 @@ O relatório tem **2 páginas** e **8 KPIs**, com medidas escritas em DAX.
 - Filtros por ano, categoria de progressão, departamento e área funcional
 
 
-
 ## Ferramentas
 
 - Power BI Desktop (modelação, medidas DAX e visualização)
 - Modelação dimensional (esquema em estrela)
 
-## Como abrir
 
-1. Fazer download do ficheiro `.pbix` deste repositório.
-2. Abrir com o [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
-3. Se não tiveres o Power BI instalado, podes ver o dashboard exportado em `docs/dashboard.pdf`.
-
-## Estrutura do repositório
-
-```
-├── README.md
-├── hr-career-progression.pbix
-├── images/
-│   ├── modelo_estrela.png
-│   ├── pagina_progressoes_individuais.png
-│   └── pagina_visao_agregada.png
 └── docs/
     ├── dashboard.pdf
     ├── medidas_dax.md
