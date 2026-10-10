@@ -31,7 +31,8 @@ Modelo dimensional em estrela com **2 tabelas de factos** e **8 dimensões**.
 | Dimensão | `Dim_Idade` | Idade e faixa etária |
 | Dimensão | `Dim_Local_trabalho` | País, distrito, concelho e freguesia |
 
-![Modelo de dados](images/modelo_estrela.png)
+<img width="1890" height="1325" alt="modelo_estrela" src="https://github.com/user-attachments/assets/64c82cdf-e073-4744-b64c-4c1e715b9e89" />
+
 
 ## Dashboard
 
@@ -48,7 +49,7 @@ O relatório tem **2 páginas** e **8 KPIs**, com medidas escritas em DAX.
 - Taxa de variação salarial por faixa etária e género
 - Filtros por categoria de progressão, género, departamento, desempenho, ano, faixa etária e concelho
 
-![Progressões Individuais](images/pagina_progressoes_individuais.png)
+
 
 ### Visão Agregada
 
@@ -58,7 +59,7 @@ O relatório tem **2 páginas** e **8 KPIs**, com medidas escritas em DAX.
 - Média do novo salário por ano fiscal
 - Filtros por ano, categoria de progressão, departamento e área funcional
 
-![Visão Agregada](images/pagina_visao_agregada.png)
+
 
 ## Ferramentas
 
