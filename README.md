@@ -87,6 +87,3 @@ O relatório tem **2 páginas** e **8 KPIs**, com medidas escritas em DAX.
     └── ficha_tecnica.pdf
 ```
 
-## Nota sobre os dados
-
-Os dados usados neste projeto são [fictícios / fornecidos no âmbito da unidade curricular] e não correspondem a pessoas ou organizações reais.
