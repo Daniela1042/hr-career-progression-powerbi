@@ -86,13 +86,6 @@ O relatório tem **2 páginas** e **8 KPIs**, com medidas escritas em DAX.
     └── ficha_tecnica.pdf
 ```
 
-## Equipa
-
-Trabalho de grupo realizado por:
-
-- Daniela Saad
-- [restantes elementos do grupo]
-
 ## Nota sobre os dados
 
 Os dados usados neste projeto são [fictícios / fornecidos no âmbito da unidade curricular] e não correspondem a pessoas ou organizações reais.
