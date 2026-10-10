@@ -65,10 +65,5 @@ O relatório tem **2 páginas** e **8 KPIs**, com medidas escritas em DAX.
 - Power BI Desktop (modelação, medidas DAX e visualização)
 - Modelação dimensional (esquema em estrela)
 
-
-└── docs/
-    ├── dashboard.pdf
-    ├── medidas_dax.md
-    └── ficha_tecnica.pdf
 ```
 
